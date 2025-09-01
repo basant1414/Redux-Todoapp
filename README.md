@@ -1,12 +1,63 @@
-# React + Vite
+# React + Vite + Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redux Todo App ✅
 
-Currently, two official plugins are available:
+A modern Todo application built with React and Redux Toolkit, featuring a sleek dark theme and full CRUD functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔧 Features
 
-## Expanding the ESLint configuration
+Add new todos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Edit existing todos
+
+Mark todos as complete/incomplete (toggle)
+
+Delete todos
+
+Responsive and modern dark-themed UI
+
+🚀 Demo
+
+https://basant1414.github.io/Redux-Todoapp/
+
+🛠️ Installation
+git clone https://github.com/basant1414/Redux-Todoapp.git
+cd Redux-Todoapp
+npm install
+npm run dev
+
+
+Open http://localhost:5173
+ in your browser to see the app running locally.
+
+📦 Build for Production
+npm run build
+npm run deploy
+
+
+Make sure your package.json and vite.config.js have the correct homepage and base:
+
+"homepage": "https://basant1414.github.io/Redux-Todoapp"
+
+// vite.config.js
+export default defineConfig({
+  base: '/Redux-Todoapp/',
+  plugins: [react()]
+});
+
+🗂️ Folder Structure
+Redux-Todoapp/
+├─ public/
+├─ src/
+│  ├─ features/
+│  │  └─ todo/
+│  │     ├─ todoSlice.js
+│  │     └─ ...
+│  ├─ components/
+│  │  ├─ AddTodo.jsx
+│  │  └─ Todos.jsx
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ package.json
+├─ vite.config.js
+└─ README.md
